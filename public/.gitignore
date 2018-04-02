@@ -1,2 +1,4 @@
-*
-!.gitignore
+/hot
+/storage
+/assets
+/mix-manifest.json
