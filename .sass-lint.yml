@@ -1,4 +1,4 @@
 files:
   include:
-    - 'src/**/*.s+(a|c)ss'
-    - 'src/js/**/*.vue'
+    - 'resources/**/*.s+(a|c)ss'
+    - 'src/**/*.vue'

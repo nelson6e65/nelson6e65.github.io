@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+let mix = require('laravel-mix')
 
 /*
  |--------------------------------------------------------------------------
@@ -11,19 +11,21 @@ let mix = require('laravel-mix');
  |
  */
 
-const PublishDir = 'public';
-const AssetsDir = PublishDir + '/assets';
+const PublishDir = 'public'
+const AssetsDir = PublishDir + '/assets'
 
 mix.setPublicPath(PublishDir)
-   .js('src/app.js', AssetsDir + '/js')
-   .sass('src/app.scss', AssetsDir + '/css');
+
+mix.js('src/index.js', AssetsDir + '/js/app.js')
+
+mix.sass('resources/scss/app.scss', AssetsDir + '/css')
 
 mix.extract([
- 'vue',
- 'vue-meta',
- 'vue-router',
- 'vuex',
- 'vuex-router-sync'
+  'vue',
+  'vue-meta',
+  'vue-router',
+  'vuex',
+  'vuex-router-sync'
 ])
 
 // Full API
