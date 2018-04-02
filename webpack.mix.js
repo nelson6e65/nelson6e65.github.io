@@ -18,6 +18,14 @@ mix.setPublicPath(PublishDir)
    .js('src/app.js', AssetsDir + '/js')
    .sass('src/app.scss', AssetsDir + '/css');
 
+mix.extract([
+ 'vue',
+ 'vue-meta',
+ 'vue-router',
+ 'vuex',
+ 'vuex-router-sync'
+])
+
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
