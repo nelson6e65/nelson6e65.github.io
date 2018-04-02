@@ -7,7 +7,7 @@
   "author": "Nelson Martell <nelson6e65@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "laravel-mix": "^1.2.0"
+    "laravel-mix": "^2"
   },
   "scripts": {
     "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
